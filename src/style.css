@@ -1,13 +1,14 @@
 body {
   font-family: arial, sans-serif;
+  background: #fff3e6;
 }
 
 h1 {
-  color: #5089c6;
-  font-size: 24px;
-  font-weight: 100;
+  color: #39a2db;
+  font-size: 35px;
+  font-weight: 120;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 1;
 }
 
 ul {
@@ -19,23 +20,24 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
 }
-.li:first-letter {
+
+li:first-letter {
   text-transform: capitalize;
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 700px;
+  margin: 40px auto;
 }
 .weather-app {
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background: white;
 }
 
 .overview {
@@ -59,4 +61,13 @@ li {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+
+#city-input-btn {
+  background-color: #39a2db;
+  border-color: #39a2db;
+}
+
+#city-input-btn:hover {
+  opacity: 0.6;
 }
