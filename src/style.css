@@ -37,7 +37,7 @@ li:first-letter {
   padding: 50px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  background: white;
+  background: #bae8e8be;
 }
 
 .overview {
@@ -63,7 +63,8 @@ li:first-letter {
   top: -34px;
 }
 
-#city-input-btn {
+#city-input-btn,
+#fetch-current-data {
   background-color: #39a2db;
   border-color: #39a2db;
 }

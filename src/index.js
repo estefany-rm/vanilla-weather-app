@@ -116,6 +116,21 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function fetchCurrent(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "cde8eb147e31086ef411a67e3e0e58c1";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function retrievePosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(fetchCurrent);
+}
+let fetchCurrentData = document.querySelector("#fetch-current-data");
+fetchCurrentData.addEventListener("click", retrievePosition);
+
 search("Amsterdam");
 
 let form = document.querySelector("#search-form");
