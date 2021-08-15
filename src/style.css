@@ -5,9 +5,9 @@ body {
 
 h1 {
   color: #39a2db;
-  font-size: 35px;
-  font-weight: 120;
-  line-height: 28px;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
   margin-bottom: 1;
 }
 
@@ -41,7 +41,7 @@ li:first-letter {
 }
 
 .overview {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .weather-temperature img {
@@ -52,9 +52,9 @@ li:first-letter {
 
 .weather-temperature strong {
   color: rbg(33, 33, 33);
-  font-size: 64px;
+  font-size: 74px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .weather-temperature .units {
@@ -67,9 +67,10 @@ li:first-letter {
 #fetch-current-data {
   background-color: #39a2db;
   border-color: #39a2db;
+  font-size: 16px;
 }
 
-#city-input-btn:hover {
+#fetch-current-data:hover {
   opacity: 0.6;
 }
 
@@ -88,5 +89,10 @@ li:first-letter {
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
 }
